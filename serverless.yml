@@ -1,0 +1,18 @@
+service: chrome-aws-lambda-playground
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  apiGateway:
+    binaryMediaTypes: # needed to return images (binary)
+      - '*/*'  
+
+functions:
+  webpageScreenshot:
+    handler: functions/webpagescreenshot.handler
+    memorySize: 2048 # needs to be larger for running chrome
+    timeout: 28 # API Gateway is 30 secs
+    events:
+      - http:
+          path: /webpagescreenshot
+          method: get
