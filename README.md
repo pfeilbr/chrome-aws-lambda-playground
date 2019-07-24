@@ -8,4 +8,8 @@ learn the [chrome-aws-lambda](https://github.com/alixaxel/chrome-aws-lambda) pac
 
 return screenshot of page from provided `url`
 
-<https://SERVICE_ENDPOINT/dev/webpagescreenshot?url=https://cnn.com>
+example with <https://twitter.com>
+
+<https://SERVICE_ENDPOINT/dev/webpagescreenshot?url=https://twitter.com>
+
+![](https://www.evernote.com/l/AAHuFLMzBhxOPrQx75otGHiArogvSLyRtKwB/image.png)
